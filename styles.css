@@ -264,7 +264,8 @@
     left: 0;
     text-align: justify;
     font-size: 18px;
-    font-family: calibri
+    font-family: calibri;
+    font-style: normal;
 }
 
 .playthisgame {
@@ -308,5 +309,6 @@
 
     .gamedevlog{
         font-size: calc(5vw + 1rem);
+        font-style: italics;
     }
 }
