@@ -225,9 +225,9 @@
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle;
-    background-color: rgb(255, 183, 197);
+    /*background-color: rgb(255, 183, 197);*/
 
-    /*background-color: rgb(80, 200, 120);*/
+    background-color: rgb(80, 200, 120);
 }
 
 .quicknavgamestile-active:hover {
