@@ -301,7 +301,7 @@
 
 /*#endregion gamedev*/
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .quicknavgamestile{
         background-color: aqua;
         font-size: calc(.5vw + 1rem);
