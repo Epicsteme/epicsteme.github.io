@@ -95,6 +95,19 @@
 }
 
 /*#region gamedev*/
+
+@media only screen and (max-width: 900px) {
+    .quicknavgamestile {
+        background-color: aqua;
+        font-size: calc(.5vw + 1rem);
+    }
+
+    .gamedevlog {
+        font-size: calc(5vw + 1rem);
+        font-style: italics;
+    }
+}
+
 .hrlogsplit {
     width: auto
 }
@@ -168,7 +181,7 @@
     left: 1em;
     top: auto 0;
     bottom: auto 0;
-    width: 150px;
+    width: 200px;
     height: 100%;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -178,7 +191,7 @@
 }
 
 .quicknavgamesanim {
-    left: -134px;
+    left: -165px;
     transition: left .15s;
     animation: quicknavgamesanim .3s 1
 }
@@ -215,7 +228,7 @@
 }
 
 .quicknavgamestile:hover {
-    background-color: rgb(246, 243, 240);
+    background-color: rgb(240, 240, 240);
 }
 
 .quicknavgamestile-active {
@@ -231,7 +244,7 @@
 }
 
 .quicknavgamestile-active:hover {
-    background-color: rgb(249, 171, 182);
+    background-color: rgb(70, 190, 110);
 }
 
 .quicknavgamestext {
@@ -299,16 +312,59 @@
     box-shadow: 0 0 4px rgba(0, 0, 0, .5)
 }
 
+
+
 /*#endregion gamedev*/
 
-@media only screen and (max-width: 900px) {
-    .quicknavgamestile{
-        background-color: aqua;
-        font-size: calc(.5vw + 1rem);
-    }
+/*#region scribble*/
 
-    .gamedevlog{
-        font-size: calc(5vw + 1rem);
-        font-style: italics;
-    }
+.read-more-state {
+    display: none;
 }
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'Show more';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'Show less';
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+}
+
+/* Other style 
+body {
+    padding: 2%;
+}
+
+p {
+    padding: 2%;
+    background: #fff9c6;
+    color: #c7b27e;
+    border: 1px solid #fce29f;
+    border-radius: .25em;
+}*/
+
+/*#endregion scribble*/
