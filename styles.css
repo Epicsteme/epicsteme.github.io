@@ -57,7 +57,7 @@
 }
 
 
-details > summary {
+details>summary {
     cursor: pointer;
     list-style: none;
 }
@@ -83,6 +83,66 @@ details > summary {
     animation-fill-mode: forwards;
     text-align: center;
     font-size: 24px
+}
+
+.featuredtiles {
+    position: relative;
+
+    float: none;
+    margin: auto;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    z-index: 0;
+    border-radius: 6px;
+}
+
+.featuredimg {
+    height: 280px;
+    width: 100%;
+    object-fit:cover;
+
+    border-radius: 6px;
+}
+
+.featuredcard {
+    position: relative;
+    float: none;
+    margin: auto;
+
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    z-index: 0;
+
+    border-radius: 6px;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    border-radius: 6px;
+}
+
+.featuredcard:hover {
+    background-color: rgb(226, 223, 220);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+.featuredrow1 {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 6px;
 }
 
 /*#endregion home*/
@@ -134,13 +194,14 @@ details > summary {
     border-radius: 6px;
     padding-top: 1%;
     padding-right: 1%;
-    padding-left: 1%
+    padding-left: 1%;
+    padding-bottom: 5px;
 }
 
 .gametilecard:hover {
     background-color: rgb(226, 223, 220);
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
-    padding-bottom: 5px
+    /*padding-bottom: 5px*/
 }
 
 .gametilehead {
@@ -168,6 +229,29 @@ details > summary {
     object-fit: contain;
     border-radius: 6px
 }
+
+.imggameref {
+    float: none;
+    margin: auto;
+
+    width: 100%;
+    height: auto;
+
+    justify-content: center;
+
+    display: flex;
+    flex-direction: row;
+
+    z-index: 0;
+    border-radius: 6px;
+}
+
+.tilegameimg2 {
+    width: fit-content;
+    object-fit: contain;
+    border-radius: 6px
+}
+
 
 .quicknavgames {
 
