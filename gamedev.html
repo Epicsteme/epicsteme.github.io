@@ -216,7 +216,7 @@
                     <img class="tilegameimg2" src="img/zodiac-ranger.gif">
 
                     <p class="gamedevlog hidelinkdecor">
-                        <a href= "https://pikonparadox.itch.io/zodiac-ranger">Zodiac Ranger</a>
+                        <a href="https://pikonparadox.itch.io/zodiac-ranger">Zodiac Ranger</a>
                     </p>
                 </div>
 
@@ -230,8 +230,9 @@
                     <img class="tilegameimg2" src="img/zodiac-ranger-hss.gif">
 
                     <p class="gamedevlog">
-                        
-                        <a href= "https://pikonparadox.itch.io/zodiac-ranger-hss">Zodiac Ranger HSS (Haffkine Space Station)</a>
+
+                        <a href="https://pikonparadox.itch.io/zodiac-ranger-hss">Zodiac Ranger HSS (Haffkine Space
+                            Station)</a>
                     </p>
                 </div>
             </div>
@@ -358,7 +359,8 @@
             <p class="gamedevlog">
                 I've made a few prototypes for the timer UI. An oxygen tank seemed to be a decent idea that fit well
                 with the premise of the game. Once I had a stable foundation for the game and realised that I would be
-                able to complete the project, I have teamed up with an artist, <a href="https://www.instagram.com/aprilrawipa.art/">April</a> from jam's discord server. Though they
+                able to complete the project, I have teamed up with an artist, <a
+                    href="https://www.instagram.com/aprilrawipa.art/">April</a> from jam's discord server. Though they
                 were relatively new to producing game art at the time, they were able to adapt quickly and deliver
                 quality content.
                 <br><br>
@@ -445,7 +447,8 @@
                 <br><br>
                 I have also learned to use One Shot in Unity which I used for NPC feedback and explosion sound effects.
                 One shot is basically "start and forget" since it cannot be stopped; the benefit is that one audio
-                source component can be used multiple times and for multiple audio clips. An example I found while learning about
+                source component can be used multiple times and for multiple audio clips. An example I found while
+                learning about
                 this is of a cube that is being thrown around in a room and the thuds being played repeatedly while also
                 overlapping.
 
@@ -464,7 +467,8 @@
                 engine is behaving as expected.
                 <br><br>
                 The pitch value changes between 0.5 and 3. The maximum magnitude of
-                ship's velocity is set to be 4. The magnitude is divided by 4 in order to bring it under 1, and then it is
+                ship's velocity is set to be 4. The magnitude is divided by 4 in order to bring it under 1, and then it
+                is
                 multiplied by 3 since the top limit of the pitch I have assigned is the value 3. The bottom clamp, 0.5
                 ensures that the engine sound does not completely stop even if the ship is stationary or moving at a
                 very low speed.
@@ -604,6 +608,9 @@
                 value of the volume slider instead of the slider's value which is saved in a variable. I fixed this by
                 removing the reference to the slider which does not exist anywhere outside settings menu and replacing
                 it with a reference to the variable that keeps a copy of the value set by the volume slider.
+                <br><br>
+                In one of the playtests, I found the audio being delayed in the game build but working as expected in
+                the engine's editor. I fixed this delay by using wired earphones instead of bluetooth earphones.
             </p>
 
             <p class="chapterhead">Playtest and Feedback</p>
