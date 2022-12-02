@@ -1,0 +1,38 @@
+:root {
+    /*--bs-body-bg: #fffef7; */
+    --bs-body-bg: #f5f5f7;
+}
+
+.accordion {
+    --bs-accordion-btn-icon-transform: rotate(180deg);
+    --bs-accordion-btn-icon-transition: transform .15s ease-in-out;
+    --bs-accordion-btn-focus-box-shadow: none;
+
+    --bs-accordion-active-bg: none;
+    --bs-accordion-bg: none;
+}
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border: var(--bs-accordion-border-width) solid lightgray;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.navbar {
+    --bs-navbar-toggler-border-color: none;
+    --bs-navbar-toggler-focus-width: none;
+
+}
+
+.overflow-x{
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.vh75{
+    height: 75vh;
+}

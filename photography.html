@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html class="htmlscroll">
+<html class="overflow-scroll">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <!--<link rel="stylesheet" href="styles.css">-->
 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="custom.css">
+    
     <title>
         Photography
     </title>
@@ -11,159 +20,77 @@
 
 <body>
 
-    <div class="allcontainers">
+    <div class="container-lg">
 
-        <div class="quicknavgames quicknavgamesanim">
+        <div id="header">
+            <nav class="navbar navbar-expand-lg navbar-light m-0">
 
-            <div>
-
-                <a class="hidelinkdecor" href="index.html">
-                    <div class="quicknavgamestile">
-                        <div class="quicknavgamestext">Home</div>
-                    </div>
+                <a href="#" class="navbar-brand">
+                    <h1 class="text-start m-0">
+                        Aditya
+                    </h1>
                 </a>
 
-                <a class="hidelinkdecor" href="art.html">
-                    <div class="quicknavgamestile">
-                        <div class="quicknavgamestext">Art</div>
-                    </div>
-                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
 
-                <a class="hidelinkdecor" href="photography.html">
-                    <div class="quicknavgamestile-active">
-                        <div class="quicknavgamestext">Photography</div>
-                    </div>
-                </a>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <a class="hidelinkdecor" href="creative-writing.html">
-                    <div class="quicknavgamestile">
-                        <div class="quicknavgamestext">Creative Writing</div>
-                    </div>
-                </a>
-
-                <a class="hidelinkdecor" href="gamedev.html">
-                    <div class="quicknavgamestile">
-                        <div class="quicknavgamestext">Game Development</div>
-                    </div>
-                </a>
-
-
-            </div>
-
-            <hr>
-
-
-            <a class="hidelinkdecor" href="#2018">
-                <div class="quicknavgamestile">
-                    <div class="quicknavgamestext">2018</div>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="ms-3">
+                            <a class="nav-link" href="index.html"> Home </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="nav-link" href="art.html"> Art </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="nav-link" href="gamedev.html"> Game Dev </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="nav-link" href="photography.html"> Photography </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="nav-link" href="creative-writing.html"> Creative Writing </a>
+                        </li>
+                    </ul>
                 </div>
-            </a>
+                
+            </nav>
 
-            <a class="hidelinkdecor" href="#2017">
-                <div class="quicknavgamestile">
-                    <div class="quicknavgamestext">2017</div>
-                </div>
-            </a>
 
-            <a class="hidelinkdecor" href="#2015">
-                <div class="quicknavgamestile">
-                    <div class="quicknavgamestext">2015</div>
-                </div>
-            </a>
-
+            <hr class="m-0 pb-3">
         </div>
 
-        <div class="maincontent">
+    </div>
 
-            <div>
-                <h1 class="h1">
-                    Photography
-                </h1>
+    <div class="container">
+
+        <div class="row m-auto">
+
+            <div class="col-12 g-0">
+                <img class="img-fluid" src="img/img-2722.png" alt="lightning strikes">
             </div>
-
-            <hr>
-
-            <div id="2018">
-                <p class="chapterhead">
-                    2018
-                </p>
+            <div class="col-12 g-0">
+                <img class="img-fluid" src="img/img-1702.png" alt="bubble on disc">
             </div>
-
-            <div>
-                <img class="gamecoverimg" src="img/crab3.png">
+            <div class="col-12 g-0">
+                <img class="img-fluid" src="img/legs.png" alt="legs at beach">
             </div>
-            
-            <br>
-
-            <div>
-                <img class="gamecoverimg" src="img/dscn5880.png">
+            <div class="col-12 g-0" id="crabs-at-beach">
+                <img class="img-fluid" src="img/crab3.png" alt="crabs at beach">
             </div>
-
-            <br>
-
-            <div>
-                <img class="gamecoverimg" src="img/img-9384.png">
+            <div class="col-12 g-0">
+                <img class="img-fluid" src="img/img-4308.png" alt="sunrays and hills">
             </div>
-
-
-            <div id="2017">
-                <p class="chapterhead">
-                    2017
-                </p>
+            <div class="col-12 g-0">
+                <img class="img-fluid" src="img/img-5287.png" alt="crow on tree">
             </div>
-
-            <div id="moonpic">
-                <img class="gamecoverimg" src="img/dscn2317.png">
-            </div>
-
-            <br>
-
-            <div>
-                <img class="gamecoverimg" src="img/dscn0468.png">
-            </div>
-
-            <br>
-
-            <div>
-                <img class="gamecoverimg" src="img/img-5233.png">
-            </div>
-
-            <br>
-
-            <div>
-                <img class="gamecoverimg" src="img/img-5287.png">
-            </div>
-
-            <br>
-
-            <div>
-                <img class="gamecoverimg" src="img/legs.png">
-            </div>
-
-
-            <div id="2015">
-                <p class="chapterhead">
-                    2015
-                </p>
-            </div>
-
-            <div>
-                <img class="gamecoverimg" src="img/img-4308.png">
-            </div>
-
-            <br>
-
-            <div>
-                <img class="gamecoverimg" src="img/img-2722.png">
-            </div>
-
-            <br>
-
-            <div>
-                <img class="gamecoverimg" src="img/img-1702.png">
-            </div>
-
         </div>
+
+    </div>
 
     </div>
 
