@@ -36,3 +36,7 @@ a {
 p {
     color: black;
 }
+
+.htmlscrolly{
+overflow-y: scroll;
+}
