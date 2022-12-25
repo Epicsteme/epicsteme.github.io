@@ -41,3 +41,6 @@ p {
 overflow-y: scroll;
 }
 
+.email-icon{
+    width: 72px;
+}
