@@ -40,3 +40,8 @@ p {
 .scrolly{
 overflow-y: scroll;
 }
+
+br.responsive {
+    display: inline; 
+  }
+  
