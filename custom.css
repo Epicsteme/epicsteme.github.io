@@ -114,27 +114,6 @@ p {
   font-weight: 700;
 }
 
-.homelinks {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.homelinks a {
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 1rem;
-}
-
-/* Responsive: vertical links on narrow screens */
-@media (max-width: 600px) {
-  .homelinks {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
-
 /* Carousel */
 .hometitles {
   /*font-size: 1rem;*/
@@ -153,7 +132,7 @@ p {
 
 .hometitles::before {
   content: "";
-  animation: changeText calc(var(--count) * 1.5s) steps(var(--count)) infinite;
+  animation: changeText calc(var(--count) * 2s) steps(var(--count)) infinite;
 }
 
 @keyframes changeText {
@@ -176,3 +155,35 @@ p {
     content: "Artist";
   }
 }
+
+.homelinks {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.homelinks a {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/* Responsive: vertical links on narrow screens */
+@media (max-width: 600px) {
+  .homelinks {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/*.fade-content {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.33s ease-in;
+}
+
+.fade-content.visible {
+  visibility: visible;
+  opacity: 1;
+}*/
