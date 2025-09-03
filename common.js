@@ -1,4 +1,4 @@
-//ADD HEADER NAVIGATION
+//------------ADD HEADER NAVIGATION------------
 class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -46,12 +46,12 @@ class MyHeader extends HTMLElement {
   }
 }
 
-//IMPLEMENT FUNCTION HEADER
+//------------IMPLEMENT FUNCTION HEADER------------
 customElements.define("my-header", MyHeader);
 
 //
 
-//ADD FOOTER NAVIGATION
+//------------ADD FOOTER NAVIGATION------------
 class FooterNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -72,10 +72,10 @@ class FooterNav extends HTMLElement {
   }
 }
 
-//IMPLEMENT FUNCTION FOOTER
+//------------IMPLEMENT FUNCTION FOOTER------------
 customElements.define("footer-nav", FooterNav);
 
-//LOAD BOOTSTRAP CSS AND JS FROM A CDN
+//------------LOAD BOOTSTRAP CSS AND JS FROM A CDN------------
 class SiteAssets extends HTMLElement {
   connectedCallback() {
     // Add Bootstrap CSS CDN
@@ -112,10 +112,10 @@ class SiteAssets extends HTMLElement {
   }
 }
 
-// IMPLEMENT FUNCTION TO LOAD BOOTSTRAP ASSETS
+// ------------IMPLEMENT FUNCTION TO LOAD BOOTSTRAP ASSETS------------
 customElements.define("site-assets", SiteAssets);
 
-// WAIT TO SHOW INDEX PAGE CONTENTS
+// ------------WAIT TO SHOW INDEX PAGE CONTENTS------------
 // this seems to be tied to "fade-content" and "fade-content.visible" in custom.css
 window.addEventListener("load", () => {
   // Fade in homeintro after 0.25 seconds (250 ms)
@@ -129,7 +129,7 @@ window.addEventListener("load", () => {
   }, 2000);*/
 });
 
-//LOOP CAROUSEL OF TITLES ON HOME PAGE
+//------------LOOP CAROUSEL OF TITLES ON HOME PAGE------------
 // List of titles to cycle through
 const hometitles = [
   "Artist",
