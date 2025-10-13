@@ -1,3 +1,25 @@
+//------------ADD GOOGLE TAG------------
+class GoogleTag extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-24S6ZLF77E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-24S6ZLF77E');
+    </script>
+
+        `;
+  }
+}
+
+//------------IMPLEMENT GOOGLE TAG------------
+customElements.define("google-tag", GoogleTag);
+
 //------------ADD HEADER NAVIGATION------------
 class MyHeader extends HTMLElement {
   connectedCallback() {
@@ -180,4 +202,3 @@ function showNextTitle() {
 }
 // Start the loop for cycling titles
 showNextTitle();
-
