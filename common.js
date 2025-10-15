@@ -1,12 +1,35 @@
 //------------ADD GOAT COUNTER------------
 class GoatCounter extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        // Problem: Setting innerHTML with a <script> tag does not execute the script.
+        // Solution: We must create the script element programmatically and append it.
 
-  <script data-goatcounter="https://epicsteme.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-        `;
-  }
+        // 1. Check if the script has already been added to prevent duplicates
+        if (document.head.querySelector('script[data-goatcounter]')) {
+            // console.log("GoatCounter script already initialized.");
+            return;
+        }
+
+        // 2. Create the script element
+        const script = document.createElement('script');
+
+        // 3. Set the required attributes
+        // This attribute tells GoatCounter where to send the data.
+        script.setAttribute('data-goatcounter', 'https://epicsteme.goatcounter.com/count');
+        
+        // The async attribute is required for non-blocking loading
+        script.setAttribute('async', ''); 
+        
+        // Set the source URL
+        script.src = '//gc.zgo.at/count.js';
+
+        // 4. Append the script to the <head> of the document, 
+        // which is the standard place for global tracking scripts.
+        document.head.appendChild(script);
+
+        // Optional: Hide the element itself as it doesn't need to be visible
+        this.style.display = 'none';
+    }
 }
 
 //------------IMPLEMENT GOAT COUNTER------------
