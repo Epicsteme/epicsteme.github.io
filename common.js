@@ -1,4 +1,18 @@
 //------------ADD GOOGLE TAG------------
+class GoatCounter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+
+  <script data-goatcounter="https://epicsteme.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+        `;
+  }
+}
+
+//------------IMPLEMENT GOOGLE TAG------------
+customElements.define("goat-counter", GoatCounter);
+
+//------------ADD GOOGLE TAG------------
 class GoogleTag extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
