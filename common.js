@@ -1,4 +1,4 @@
-//------------ADD GOOGLE TAG------------
+//------------ADD GOAT COUNTER------------
 class GoatCounter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -9,7 +9,7 @@ class GoatCounter extends HTMLElement {
   }
 }
 
-//------------IMPLEMENT GOOGLE TAG------------
+//------------IMPLEMENT GOAT COUNTER------------
 customElements.define("goat-counter", GoatCounter);
 
 //------------ADD GOOGLE TAG------------
